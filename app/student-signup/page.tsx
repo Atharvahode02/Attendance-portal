@@ -25,9 +25,6 @@ export default function StudentSignup() {
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
-        options: {
-          emailRedirectTo: null, // prevent redirect email
-        },
       });
 
       if (error) throw error;
@@ -54,7 +51,7 @@ export default function StudentSignup() {
       alert("Account created successfully!");
       router.push("/student-login");
 
-    } catch (err) {
+    } catch (err : any) {
       alert(err.message);
     } finally {
       setLoading(false);

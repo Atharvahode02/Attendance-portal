@@ -58,8 +58,8 @@ export default function StudentLogin() {
       // Redirect to student dashboard
       router.push("/dashboard/student");
 
-    } catch (err) {
-      alert(err.message);
+    } catch (error : any) {
+      alert(error.message || "An error occurred during login.");
     } finally {
       setLoading(false);
     }
