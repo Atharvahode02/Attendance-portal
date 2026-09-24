@@ -28,16 +28,6 @@ A web-based **Attendance Management Portal** designed to simplify attendance tra
 - Vercel
 
 ---
-
-## 📸 Screenshots
-
-Add screenshots of your project here.
-
-```text
-screenshots/
-├── dashboard.png
-├── attendance.png
-└── login.png
 ```
 
 ---
